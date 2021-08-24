@@ -6,11 +6,10 @@
 .form{
     position: relative;
     border-radius: 10px;
-    width: 70vw ;
-    height: 35vh;
-    border: 1px solid white;
+    width: 60vw ;
+    height: 25vh;
     margin: 10vh auto;
-    background-color: rgb(161, 159, 159);
+    background-color: rgb(70, 66, 66);
 }
 /* definiamo i nostri box che conterranno span input e select */
 .box {
@@ -19,10 +18,7 @@
     margin-top: 10px;
     height: 15vh;
     float: left;
-    border: 2px solid white;
     border-radius: 10px;
-    background-color: rgb(173, 10, 10);
-
 }  
  /* diamo una font:family al nostro span  un colore ed un margine  */
     .box span {
@@ -37,10 +33,11 @@
     margin-top: 30px;
     outline: none;
     border: 1px solid white;
-    padding: 5px 20px;
+    padding: 5px 10px;
     margin-left: 50%; transform: translate(-50%);
     font-family:'Courier New', Courier, monospace;
     background-color: white;
+    text-align: center;
 }
 
 /* con il passaggio del mouse i vari imput e select cambieranno sfondo e il cursore */
@@ -52,24 +49,23 @@
 }
 /* sezione che conterrà i due bottoni  */
 .sezione_bottoni {
-    margin-left: 50%; transform: translate(-50%);
-    width: 33%;
-    height: 10vh;
-    border: 2px solid white;
+    display: flex;
+    flex-direction: row;
+    margin-left: 48.5%; transform: translate(-50%);
     position: absolute;
     bottom: 2vh;
-    border-radius: 10px;
-    background-color:rgb(173, 10, 10);
+   
+   
+   
 }
 /* impostiamo i bottoni di generazione e annullamento biglietto */
 button{
     background-color: whitesmoke;
     outline: none;
-    padding: 5px 10px;
+    padding: 3px 10px;
     font-family:'Courier New', Courier, monospace;
     cursor: pointer;
-    margin-left: 13%;
-    margin-top: 2.5vh;
+    margin-left: 3%;
     color:rgb(68, 65, 65);
 }
 /* passando con il mouse sul bottone lo sfondo cambia con una transizione di 1 secondo */
@@ -88,38 +84,46 @@ button:hover{
 width: 80vw;
 height: 30vh;
 position: absolute;
-bottom: 5vh;
+bottom: 30vh;
 border-radius: 10px;
 margin-left: 50%;
- transform: translate(-50%);
- background-color: rgb(161, 159, 159);
+transform: translate(-50%);
+background-color: darkgray;
+display: flex;
+flex-direction: row;
 }
 .box_biglietto {
     z-index: 999;
     border-radius: 10px;
-    width: calc( 100% / 6 - 15px);
-    margin-left: 12px ;
-    height: 25vh;
+    width: 20%;
+    margin-left: 5px ;
+    height: 20vh;
     margin-top: 2vh;
-    border:2px solid white;
-     float:left;
+    /* border:2px solid white; */
+    
+   
     
 }
 .box_biglietto h4 {
     margin-top: 2vh;
     text-align: center;
     font-family:'Courier New', Courier, monospace;
-    color: white;
+    color: rgb(88, 87, 87);
 }
 .box_biglietto h6{
-    line-height: 20vh;
+    line-height: 7vh;
     text-align: center;
-    
-    color: white;
+    color: rgb(14, 12, 12);
     font-family:'Courier New', Courier, monospace;
     font-size: 1em;
+    
 }
 #name{
-    background-color: rgb(173, 10, 10);
-    
+    margin-left: 10px;
+    background-color: rgb(61, 57, 57);
+    width: 23%;
+    height: 80%;
+}
+#name > h4, #name >h6{
+    color: rgb(179, 177, 177);
 }
