@@ -8,35 +8,72 @@
     <title>biglietto con form</title>
 </head>
 <body>
-    <!-- ogni box contiene info su nome fascia d'eta e km da percorrere -->
-    <div class="form">
+   <!-- INIZIO DEL FORM CHE PERMETTERA' LA CREAZIONE DEL BIGLIETTO -->
+    <div  class="form">
+ <!-- ogni box contiene info su nome fascia d'eta e km da percorrere --> 
 
+      <!-- BOX NOME E COGNOME PASSEGGERO -->
       <div class="box">
         <span>Nome Cognome</span><br>
         <input placeholder="NOME COGNOME" type="text" name="" id="nome">
       </div>
 
-
+      <!-- BOX CHILOMETRI -->
       <div class="box">
         <span>Km da percorrere</span><br>
         <input placeholder="KM DA PERCORRERE" type="number" name="" id="km">
       </div>
 
-
+     <!-- BOX FASCIA ETA' -->
       <div class="box">
             <span>Fascia D' Età</span><br>
             <select  name="" id="eta">
+                <option value="null"></option>
                 <option value="minorenne">joung (da 1 a  17 anni)</option>
                 <option value="adulto">adult (da 18 a 64 anni)</option>
                 <option value="anziano">senior (da 64 a 99 anni)</option>
             </select>
       </div>
-
+        <!-- SEZIONE CHE CONTIENE I BOTTONI GENERA ED ANNULLA -->
       <div class="sezione_bottoni">
-         <button>biglietto</button> <button>annulla</button> 
+         <button id="genera">biglietto</button> <button id="annulla">annulla</button> 
       </div>
     </div>
+     <!-- FINE DEL FORM PER GENERARE IL BIGLIETTO -->
 
+     <div class="biglietto">
+       <div id="name" class="box_biglietto">
+         <h4>Nome passeggero</h4>
+         <h6 id="nomePasseggero" >...............</h6>
+       </div>
+
+       <div class="box_biglietto">
+        <h4>Carrozza</h4>
+        <h6 id="numeroCarrozza">...............</h6>
+        <h6></h6>
+       </div>
+
+       <div class="box_biglietto">
+        <h4>Codice cp</h4>
+        <h6 id="codiceCp">..............</h6>
+       </div>
+
+       <div class="box_biglietto">
+        <h4>Tratta in km</h4>
+        <h6 id="kmPercorsi">...............</h6>
+       </div>
+
+       <div class="box_biglietto">
+        <h4>Sconto </h4>
+        <h6 id="scontoApplicato">...............</h6>
+       </div>
+
+       <div class="box_biglietto">
+        <h4>Biglietto</h4>
+        <h6 id="totaleBiglietto">..............</h6>
+       </div>
+
+     </div>
 
     <script src="main.js"></script>
 </body>

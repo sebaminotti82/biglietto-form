@@ -1,7 +1,8 @@
 *{
     margin: 0; padding: 0; box-sizing: border-box;
-    background-color: darkcyan;
+   
 }
+/* definiamo il nostro form con larghezza altezza border etc */
 .form{
     position: relative;
     border-radius: 10px;
@@ -9,23 +10,28 @@
     height: 35vh;
     border: 1px solid white;
     margin: 10vh auto;
+    background-color: rgb(161, 159, 159);
 }
+/* definiamo i nostri box che conterranno span input e select */
 .box {
-
     width: calc(100% / 3 - 30px);
     margin-left: 23px;
     margin-top: 10px;
     height: 15vh;
     float: left;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 10px;
+    background-color: rgb(173, 10, 10);
 
-}
+}  
+ /* diamo una font:family al nostro span  un colore ed un margine  */
     .box span {
     margin-left: 30%;
     font-family:'Courier New', Courier, monospace;
-    color:rgb(68, 65, 65)
+    color:white;
+   
 }
+/* diamo delle definizioni di largezza altezza padding e bordi ai nostri imput e select */
 .box input, .box select {
     border-radius: 10px;
     margin-top: 30px;
@@ -34,22 +40,30 @@
     padding: 5px 20px;
     margin-left: 50%; transform: translate(-50%);
     font-family:'Courier New', Courier, monospace;
+    background-color: white;
 }
+
+/* con il passaggio del mouse i vari imput e select cambieranno sfondo e il cursore */
 .box >input:hover, .box >select:hover{
   
     background-color: paleturquoise;
     transition: 2s;
+    cursor: pointer;
 }
+/* sezione che conterrà i due bottoni  */
 .sezione_bottoni {
     margin-left: 50%; transform: translate(-50%);
     width: 33%;
     height: 10vh;
-    border: 1px solid white;
+    border: 2px solid white;
     position: absolute;
     bottom: 2vh;
     border-radius: 10px;
+    background-color:rgb(173, 10, 10);
 }
+/* impostiamo i bottoni di generazione e annullamento biglietto */
 button{
+    background-color: whitesmoke;
     outline: none;
     padding: 5px 10px;
     font-family:'Courier New', Courier, monospace;
@@ -58,7 +72,54 @@ button{
     margin-top: 2.5vh;
     color:rgb(68, 65, 65);
 }
+/* passando con il mouse sul bottone lo sfondo cambia con una transizione di 1 secondo */
 button:hover{
     background-color: paleturquoise;
     transition: 1s;
+}
+
+/* FINE DEL FORM BIGLIETTO  */
+
+
+
+/* INIZIO CSS DEL BIGLIETTO GENERATO */
+
+.biglietto {
+width: 80vw;
+height: 30vh;
+position: absolute;
+bottom: 5vh;
+border-radius: 10px;
+margin-left: 50%;
+ transform: translate(-50%);
+ background-color: rgb(161, 159, 159);
+}
+.box_biglietto {
+    z-index: 999;
+    border-radius: 10px;
+    width: calc( 100% / 6 - 15px);
+    margin-left: 12px ;
+    height: 25vh;
+    margin-top: 2vh;
+    border:2px solid white;
+     float:left;
+    
+}
+.box_biglietto h4 {
+    margin-top: 2vh;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+.box_biglietto h6{
+    line-height: 20vh;
+    text-align: center;
+    
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1em;
+}
+#name{
+    background-color: rgb(173, 10, 10);
+    
 }
